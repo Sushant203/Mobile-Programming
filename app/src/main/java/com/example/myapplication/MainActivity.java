@@ -3,11 +3,13 @@ package com.example.myapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -33,8 +35,10 @@ public class MainActivity extends AppCompatActivity {
         CheckBox chk= findViewById(R.id.checkBox);
         CheckBox chk1=findViewById(R.id.checkBox2);
 
-
-
+        ArrayAdapter<CharSequence> semArray= ArrayAdapter.createFromResource(this,R.array.semester, androidx.constraintlayout.widget.R.layout.support_simple_spinner_dropdown_item);
+            semArray.setDropDownViewResource(androidx.appcompat.R.layout.support_simple_spinner_dropdown_item);
+        Spinner sem=findViewById(R.id.spinsem);
+        sem.setAdapter(semArray);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
