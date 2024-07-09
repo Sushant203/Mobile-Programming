@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
         CheckBox chk= findViewById(R.id.checkBox);
         CheckBox chk1=findViewById(R.id.checkBox2);
 
-        ArrayAdapter<CharSequence> semArray= ArrayAdapter.createFromResource(this,R.array.semester, androidx.constraintlayout.widget.R.layout.support_simple_spinner_dropdown_item);
-            semArray.setDropDownViewResource(androidx.appcompat.R.layout.support_simple_spinner_dropdown_item);
+        ArrayAdapter<CharSequence> semArray= ArrayAdapter.createFromResource(this,R.array.semester,R.layout.spinner_layout);
+            semArray.setDropDownViewResource(R.layout.spinner_layout);
         Spinner sem=findViewById(R.id.spinsem);
         sem.setAdapter(semArray);
         btn.setOnClickListener(new View.OnClickListener() {
