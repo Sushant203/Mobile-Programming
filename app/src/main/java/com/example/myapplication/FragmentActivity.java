@@ -22,7 +22,7 @@ public class FragmentActivity extends AppCompatActivity {
 
         Button btn1=findViewById(R.id.button3);
         Button btn2= findViewById(R.id.button4);
-        Button btn3= findViewById(R.id.button5);
+
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,15 +42,7 @@ public class FragmentActivity extends AppCompatActivity {
                 frt.commit();
             }
         });
-        btn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentManager frg= getSupportFragmentManager();
-                FragmentTransaction frt= frg.beginTransaction();
-                frt.replace(R.id.fragmentContainerView,new BlankFragment3());
-                frt.commit();
-            }
-        });
+
 
     }
 }
