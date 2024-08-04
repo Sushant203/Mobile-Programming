@@ -13,12 +13,22 @@
         android:theme="@style/Theme.ListApplication"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".CustomListView"
             android:exported="true" >
             <intent-filter>
-                <category android:name="android.intent.category.LAUNCHER"/>
-                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.MAIN" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+<!--            <intent-filter>-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--            </intent-filter>-->
         </activity>
     </application>
 

@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         ListView view = findViewById(R.id.listdetails);
         String[] names = { "manoj", "sushant", "himal", "jivan" };
 
-        ArrayAdapter<String> namesAdapter = new ArrayAdapter<>(this, R.layout.list_item_layout, R.id.textlistitem, names);
+        ArrayAdapter<String> namesAdapter = new ArrayAdapter<String>(this, R.layout.list_item_layout, R.id.textlistitem, names);
         view.setAdapter(namesAdapter);
     }
 }
