@@ -9,6 +9,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 
@@ -22,6 +23,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class Menu_activity extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
 AlertDialog.Builder builder;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,7 @@ AlertDialog.Builder builder;
         Button btn= findViewById(R.id.button6);
         registerForContextMenu(btn);
         Button alertbtn= findViewById(R.id.button7);
+
         builder= new AlertDialog.Builder(this);
         alertbtn.setOnClickListener(new View.OnClickListener() {
             @Override
